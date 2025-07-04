@@ -1,0 +1,257 @@
+@use '_mixins' as *;
+@use 'variables' as *;
+
+/* base style */
+@font-face {
+    font-family: "Tajawal";
+    src: url(../fonts/Tajawal.ttf);
+}
+* {
+    font-family: "Tajawal", sans-serif;
+    font-style: normal;
+    line-height: normal;
+}
+
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+}
+body {
+    position: relative;
+    margin: 0px; padding: 0px;
+    // max-width: $max-body-width;
+    margin: auto;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    background: $body-color;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    background: #c3cec991;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: map-get($colors, "primary");
+    border-radius: 9px;
+}
+ul,
+ol {
+  @include list_reset;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+img {
+  background-repeat: no-repeat;
+}
+//colors
+@each $name, $color in $colors {
+  .color-#{$name} {
+    color: #{$color};
+  }
+//   .bg-#{$name} {
+//     background-color: #{$color};
+//   }
+}
+
+// buttons
+$buttons-colors: (
+  "primary-gradient": $primary-gradient,
+  "primary": $primary
+);
+
+@each $name, $color in $buttons-colors {
+  .btn-#{$name} , .btn-#{$name}:active {
+    background: $color !important;
+    color: white !important;
+  }
+}
+/* fonts */
+// font sizes
+@each $class, $size in $font-sizes {
+  .#{$class} {
+    font-size: $size;
+  }
+}
+
+// font weights
+@each $class, $weight in $font-weights {
+  .#{$class} {
+    font-weight: $weight;
+  }
+}
+
+
+p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+label {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+.gradient-text {
+  background: $primary-gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+//buttons
+.btn {
+    @include flex($gap:5px);
+    flex-wrap: nowrap;
+    padding: 13px 24px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn:hover {
+    opacity: 0.9;
+}
+.btn-primary {
+  @include button-style($primary);
+}
+.white-btn {
+    @include button-style(#fff,$primary,#fff);
+    * {
+        color: map-get($colors, "primary");
+    }
+}
+.border-white-btn {
+    @include button-style(transparent,#fff,#fff);
+    * {
+        color: map-get($colors, "primary");
+    }
+}
+.border-gradient-btn , .border-gradient-btn:active {
+  border: 2px solid transparent;
+  background-image: 
+    linear-gradient(white, white),   
+    $primary-gradient; 
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  span {
+    @extend .gradient-text;
+  }
+} 
+.readmore_btn {
+   @include flex(row, center, center,$gap:10px);
+   cursor: pointer;
+   font-weight: 500;
+}
+.bi::before {
+   vertical-align: -.2em;
+}
+
+
+// custom class
+.full-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: 100%;
+}
+.img {
+  max-width: 100%;
+  max-height: 100%
+}
+.gradient-layout {
+  @include full-cover;
+  background-color: $layout-gradient;
+}
+
+.buttons {
+    @include flex(row, center, center, nowrap, 12px);
+}
+
+.grid-3 {
+  @include grid(350px); // min column = 350px
+}
+.grid-4 {
+  @include grid(250px , $gap:25px 16px); // min column = 250px
+}
+
+.max-width-100 {
+    max-width: 100%;
+}
+.main-padding {
+    @include apply-main-padding();
+}
+.max-width-50 {
+    max-width: 50%;
+}
+.max-width-35 {
+    width: 35%;
+    max-width: 35%;
+}
+.max-width-20 {
+    max-width: 20%;
+}
+.border-radius {
+    border-radius: $border-radius;
+}
+/* custom style */
+.gap-top-50 {
+    row-gap: 50px !important;
+}
+.form-control , .form-select {
+    border-radius: 8px;
+    padding: 10px 24px;
+}
+.input-group {
+  border-radius: 8px;
+}
+.form-control:focus , .form-select:focus{
+    border-color: #4c96aee2 !important;
+    background-color: var(--light-gray);
+    box-shadow: .3px .3px 5px .3px #006c8471 !important;
+}
+::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: #8E8E8E !important;
+}
+textarea {
+    resize: none;
+}
+.padding {
+    padding: 14px var(--padding);
+}
+.divider {
+    width: 0.5px;
+    height: 12px;
+    background: var(--secondary-color);
+}
+.capitalize {
+    text-transform: capitalize;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.icon-sm {
+    width: 24px;
+    height: 24px;
+}
+.icon-lg {
+    width: 48px;
+    height: 48px;
+}
+.icon-xl {
+    width: 75px;
+    height: 75px;
+}
+.icon {
+  cursor: pointer;
+}
+.text-muted {
+    color: #8A8A8A !important;
+}

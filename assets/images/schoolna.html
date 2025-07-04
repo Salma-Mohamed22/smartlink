@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- bootstrap css -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+        <!-- bootstrap icon -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+        <!-- font -->
+        <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+            rel="stylesheet">
+
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+        <!-- css file -->
+        <link rel="stylesheet" href="../../assets/css/theme.css">
+        <link rel="stylesheet" href="../../assets/css/custom.css">
+     Mazaya</title>
+
+</head>
+<body>
+    <div class="d-flex flex-column min-vh-100">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-between align-items-center home-nav" >
+        <div class="d-flex gap-4 align-items-center col">
+            <a class="menu-icon rounded-2 p-1">
+                <img src="../../assets/images/icons/logo_menu.svg" alt="side menu" class="icon icon-sm menu-main-icon">
+                <img src="../../assets/images/icons/x-circle.svg" alt="side menu" class="icon icon-sm menu-close-icon d-none">
+            </a>
+            <a class="navbar-logo">
+                <img src="../../assets/images/logo.svg" alt="Mazaya logo" class="img-fluid">
+            </a>
+        </div>
+        <div class="d-flex gap-4 align-items-center justify-content-end col">
+            <a class="navbar-icon">
+                <img src="../../assets/images/search.svg" alt="search" class="icon-sm">
+            </a>
+            <a class="navbar-icon">
+                <img src="../../assets/images/lang.svg" alt="language" class="icon-sm">
+            </a>
+        </div>
+      </nav>
+
+      <!-- menu modal -->
+      <div class="menu-page padding">
+        <div class="container-fluid">
+            <div class="paddding d-flex justify-content-center justify-content-md-between flex-wrap align-items-start">
+                <div class="col-md-3 mb-3">
+                    <img class="w-100" src="../../assets/images/menu.png" alt="">
+                </div>
+                <div class="cards-container row col-md-9">
+                    <div class="col-md-4 mb-3">
+                        <div class="card card-menu">
+                            <div class="rounded bg-light p-2 d-flex justify-content-center align-items-center mb-2 card-icon">
+                                <img src="../../assets/images/home-2.svg" alt="home">
+                            </div>
+                            <h6 class="fs-18 fw-500 text-center">Home</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card card-menu">
+                            <span class="max-content rounded bg-light p-2 d-flex justify-content-center align-items-center mb-2 card-icon">
+                                <img src="../../assets/images/information.svg" alt="information">
+                            </span>
+                            <h6 class="fs-18 fw-500 text-center">About us</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card card-menu">
+                            <div class="rounded bg-light p-2 d-flex justify-content-center align-items-center mb-2 card-icon">
+                                <img src="../../assets/images/box-search.svg" alt="products">
+                            </div>
+                            <h6 class="fs-18 fw-500 text-center">Products</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card card-menu">
+                            <div class="rounded bg-light p-2 d-flex justify-content-center align-items-center mb-2 card-icon">
+                                <img src="../../assets/images/setting-icon.svg" alt="setting">
+                            </div>
+                            <h6 class="fs-18 fw-500 text-center">Services & Offerings</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card card-menu">
+                            <div class="rounded bg-light p-2 d-flex justify-content-center align-items-center mb-2 card-icon">
+                                <img src="../../assets/images/ranking.svg" alt="ranking">
+                            </div>
+                            <h6 class="fs-18 fw-500 text-center">Careers</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card card-menu">
+                            <div class="rounded bg-light p-2 d-flex justify-content-center align-items-center mb-2 card-icon">
+                                <img src="../../assets/images/messages-icon.svg" alt="messages">
+                            </div>
+                            <h6 class="fs-18 fw-500 text-center">Contact us</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- breadcrumb -->
+      <nav class="breadcrumb-nav" style="--bs-breadcrumb-divider: url('data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%278%27 height=%279%27 viewBox=%270 0 8 9%27 fill=%27none%27%3E%3Cg clip-path=%27url(%23clip0)%27%3E%3Cpath d=%27M7.80312 4.02556L4.4754 0.697823C4.21294 0.435361 3.78727 0.435361 3.52481 0.697823C3.26234 0.960285 3.26234 1.38596 3.52481 1.64842L6.37692 4.50052L3.52481 7.35261C3.26234 7.61508 3.26234 8.04075 3.52481 8.30321C3.78727 8.56567 4.21294 8.56567 4.4754 8.30321L7.80312 4.97549C8.06559 4.71368 8.06559 4.28802 7.80312 4.02556ZM3.80192 3.82405L1.15999 1.03956C0.894525 0.760122 0.464539 0.760122 0.199071 1.03956C-0.0663976 1.31901 -0.0663976 1.77232 0.199071 2.05211L2.36071 4.33032L0.199071 6.60853C-0.0663976 6.88799 -0.0663976 7.34162 0.199071 7.62107C0.464539 7.90053 0.894525 7.90053 1.15999 7.62107L3.80192 4.83659C4.06739 4.55715 4.06739 4.10383 3.80192 3.82405Z%27 fill=%27%23929292%27/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id=%27clip0%27%3E%3Crect width=%278%27 height=%278%27 fill=%27white%27 transform=%27translate(0 0.5)%27/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E');" aria-label="breadcrumb">
+        <h4>Product</h4>
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Product</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Schoolna</li>
+        </ol>
+      </nav>
+
+      <!-- aside -->
+      <aside>
+        <ul class="d-flex flex-column gap-2">
+           <li class="list-aside-item p-2 px-1 text-center fw-400 fs-14 light-color">
+               <img src="../../assets/images/icons/box-search-white.svg" alt="Overview" class="icon-sm w-100 mb-1">
+               Overview
+           </li>
+           <li class="list-aside-item p-2 px-1 text-center fw-400 fs-14 light-color">
+               <img src="../../assets/images/icons/Schoona.svg" alt="Schoolna" class="icon-sm w-100 mb-1">
+               Schoolna
+           </li>
+           <li class="list-aside-item p-2 px-1 text-center fw-400 fs-14 light-color">
+               <img src="../../assets/images/icons/Rawda.svg" alt="Rawda" class="icon-sm w-100 mb-1">
+               Rawda
+           </li>
+           <li class="list-aside-item p-2 px-1 text-center fw-400 fs-14 light-color">
+               <img src="../../assets/images/icons/Aqar.svg" alt="Aqar" class="icon-sm w-100 mb-1">
+               Aqar
+           </li>
+           <li class="list-aside-item p-2 px-1 text-center fw-400 fs-14 light-color">
+               <img src="../../assets/images/icons/AUTOMATOR.svg" alt="AUTOMATOR" class="icon-sm w-100 mb-1">
+               Automator
+           </li>
+           <li class="list-aside-item p-2 px-1 text-center fw-400 fs-14 light-color">
+               <img src="../../assets/images/icons/Bord.G.svg" alt="Bord.G" class="icon-sm w-100 mb-1">
+               Bord.G
+           </li>
+        </ul>
+      </aside>
+ 
+    <main>  
+        <div class="content-page d-flex flex-column gap-3 padding w-100" >
+            <!-- container tabs -->
+            <!-- Tabs -->
+            <ul class="tabs d-flex gap-2 text-center flex-wrap" role="tablist">
+                <li class="nav-link list-aside-item active" data-bs-toggle="tab" data-bs-target="#overview" type="button" role="tab">Overview</li>
+                <li class="nav-link list-aside-item" data-bs-toggle="tab" data-bs-target="#components" type="button" role="tab">Components</li>
+                <li class="nav-link list-aside-item" data-bs-toggle="tab" data-bs-target="#features" type="button" role="tab">Features</li>
+                <li class="nav-link list-aside-item" data-bs-toggle="tab" data-bs-target="#users" type="button" role="tab">Users</li>
+                <li class="nav-link list-aside-item" data-bs-toggle="tab" data-bs-target="#clients" type="button" role="tab">Clients</li>
+            </ul>
+
+            <!-- Tab Content -->
+            <div class="tab-content mt-3">
+                <div class="tab-pane fade show active" id="overview" role="tabpanel">
+                   <div class="d-flex align-items-stretch about-section">
+                        <div class="col-md-12 col-lg-8 d-flex flex-column gap-3 zindex-1 justify-content-center">
+                            <h1 class="position-relative mb-2">Schoolna Integrated School Management System</h1>
+                            <p>Skoolna is a flexible school management system that provides easy access to staff, parents, and students for managing daily operations, student data, registration, finances, and more. It also allows easy tracking of schedules, grades, and attendance</p>
+                            <ul class="content-list d-flex flex-column gap-2">
+                                <li>Easy access for staff, parents, and students.</li>
+                                <li>Manages daily operations and student data.</li>
+                                <li>Data and Registration: Tracks student data and manages registration.</li>
+                                <li>Streamlines registration, finances, and academic tracking.</li>
+                            </ul>
+                            <div class="buttons d-flex gap-2 flex-wrap">
+                                <a href="" class="btn btn-primary">Request a free copy</a>
+                                <a href="" class="btn btn-secondary">Download Brochure 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <path d="M2 14.5H14M8 2.5V11.8333M8 11.8333L12.6667 7.16667M8 11.8333L3.33333 7.16667" stroke="#006B84" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg> </a>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6 d-flex align-items-end about-img-div">
+                                    <img src="../../assets/images/about.svg" class="w-100 about-img position-relative" alt="schoolna">
+                        </div>
+                   </div>
+                </div>
+                <div class="tab-pane fade" id="components" role="tabpanel">
+                    <div class="schoolna_cards grid-3">
+                        <div class="card gap-3 position-relative">
+                            <div class="layout"></div>
+                            <img src="../../assets/images/s1.svg" class="card-img">
+                            <h4 class="w-100 title">System administrator, staff and teachers control panel</h4>
+                            <ul class="d-flex flex-column gap-2 w-100">
+                                <li class="fs-14 fw-400">Administrators and staff: Rawda system efficiently manages student data, including admission and registration, payment processes, class schedules, attendance tracking, announcements, and gradebooks.</li>
+                                <li class="fs-14 fw-400">Teachers can track their own schedules and control each student's grades through the teacher's control panel.</li>
+                            </ul>
+                        </div>
+                        <div class="card gap-3 position-relative">
+                            <div class="layout"></div>
+                            <h4 class="w-100 title">Parents' Website</h4>
+                            <ul class="d-flex flex-column gap-2 w-100">
+                                <li class="fs-14 fw-400">Parents can register their children for nursery, pay for fees, and track their children's attendance, grades, and schedules through the parent's website.</li>
+                                <li class="fs-14 fw-400">Parents can register their children for nursery, pay for fees, and track their children's attendance, grades, and schedules through the parent's website.</li>
+                            </ul>
+                            <img src="../../assets/images/s2.svg" class="card-img">
+                        </div>
+                        <div class="card gap-3 position-relative">
+                            <div class="layout"></div>
+                            <img src="../../assets/images/s3.svg" class="card-img">
+                            <h4 class="w-100 title">System administrator, staff and teachers control panel</h4>
+                            <ul class="d-flex flex-column gap-2 w-100">
+                                <li class="fs-14 fw-400">Administrators and staff: Rawda system efficiently manages student data, including admission and registration, payment processes, class schedules, attendance tracking, announcements, and gradebooks.</li>
+                                <li class="fs-14 fw-400">Teachers can track their own schedules and control each student's grades through the teacher's control panel.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="features" role="tabpanel">
+                    <div class="d-flex flex-wrap gap-4 justify-content-center align-items-center gap-top-50" >
+                        <div class="img-section-parent max-width-20 position-relative rounded-4">
+                            <img src="../../assets/images/feature.svg" class="img" alt="mission img">
+                            <div class="img-layout rounded-4"></div>
+                            <div class="position-absolute end-0 bottom-0 text-white p-3 d-flex gap-1 flex-column">
+                                <h5 class="fs-18">A world Full of Features</h5>
+                                <h6 class="fw-400 fs-14">Our system meets everyone's needs. Discover its features and make it an essential part of your nursery's success</h6>
+                            </div>
+                        </div>
+                        <div class="grid-4 col-sm-12 col-md ">
+                                <div class="card position-relative justify-content-start">
+                                    <div class="w-100 d-flex flex-column gap-2 mb-2">
+                                        <img src="../../assets/images/icons/f1_icon.svg" alt="Schoolna" class="icon-lg">
+                                        <h5 class="fw-500">Admission and Registration</h5>
+                                    </div>
+                                    <p class="fw-400 fs-14">Parents can apply online by uploading registration documents for administrative review.</p>
+                                </div>
+                                <div class="card position-relative justify-content-start">
+                                    <div class="w-100 d-flex flex-column gap-2 mb-2">
+                                        <img src="../../assets/images/icons/f2_icon.svg" alt="Schoolna" class="icon-lg">
+                                        <h5 class="fw-500">Accounting and Subscription</h5>
+                                    </div>
+                                    <p class="fw-400 fs-14">The system manages payments and discounts for admissions, tuition, books, and subscriptions efficiently.</p>
+                                </div>
+                                <div class="card position-relative justify-content-start">
+                                    <div class="w-100 d-flex flex-column gap-2 mb-2">
+                                        <img src="../../assets/images/icons/f3_icon.svg" alt="Schoolna" class="icon-lg">
+                                        <h5 class="fw-500">Class Schedule</h5>
+                                    </div>
+                                    <p class="fw-400 fs-14">Class schedules are set by defining workdays, classes, subjects, and teachers, and are accessible online by parents, students, and teachers.</p>
+                                </div>
+                                <div class="card position-relative justify-content-start">
+                                    <div class="w-100 d-flex flex-column gap-2 mb-2">
+                                        <img src="../../assets/images/icons/f4_icon.svg" alt="Schoolna" class="icon-lg card-icon">
+                                        <h5 class="fw-500">Attendance system</h5>
+                                    </div>
+                                    <p class="fw-400 fs-14">The system allows staff to record student attendance, while parents can track it via the website and mobile app.</p>
+                                </div>
+                                <div class="card position-relative justify-content-start">
+                                    <div class="w-100 d-flex flex-column gap-2 mb-2">
+                                        <img src="../../assets/images/icons/f5_icon.svg" alt="Schoolna" class="icon-lg card-icon">
+                                        <h5 class="fw-500">Gradebook</h5>
+                                    </div>
+                                    <p class="fw-400 fs-14">The system enables adding student grades based on set criteria, with parents able to monitor grades through the website and mobile app.</p>
+                                </div>
+                                <div class="card position-relative justify-content-start">
+                                    <div class="w-100 d-flex flex-column gap-2 mb-2">
+                                        <img src="../../assets/images/icons/f6_icon.svg" alt="Schoolna" class="icon-lg card-icon">
+                                        <h5 class="fw-500">Advertisements</h5>
+                                    </div>
+                                    <p class="fw-400 fs-14">The system allows sending announcements to students and parents by grade, class, individual, or group.</p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="users" role="tabpanel">
+                    <div class="steps-grid">
+                       <div class="d-flex align-items-center step-card" style="border: 2px solid red;">
+                          <div class="step">
+
+                          </div>
+                       </div>
+                       <div class="step d-flex align-items-center step-card" style="border: 2px solid red;">e</div>
+                       <div class="step d-flex align-items-center step-card" style="border: 2px solid red;">e</div>
+                       <div class="step d-flex align-items-center step-card" style="border: 2px solid red;">e</div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="clients" role="tabpanel">
+                    <div class="section d-flex flex-wrap justify-content-center align-items-center gap-x-10 gap-y-25">
+                        <div class="d-flex flex-column gap-1 col-md-12 col-lg-4" >
+                                <h6 class="secondary-bg-title ">Our Client</h6>
+                                <h1 class="w-75">Learn with our Partners</h1>
+                                <h6 class="fs-14 fw-400 text-muted mt-3">We offer certified training solutions from over 20 industry-leading partners for the tools and technologies you use every day.</h6>
+                                <div class="mt-3 d-flex align-items-center justify-content-start gap-2">
+                                    <div class="swiper-button-prev partner-swipper-btn"><i class="bi bi-caret-left-fill"></i></div>
+                                    <div class="swiper-button-next partner-swipper-btn"><i class="bi bi-caret-right-fill"></i></div>
+                                </div>
+                        </div>
+                        <!-- Swiper -->
+                        <div class="swiper partner_swipper col-md-12 col-lg-7" >
+                            <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img class="img" src="../../assets/images/part1.svg"></div>
+                            <div class="swiper-slide"><img class="img" src="../../assets/images/part2.svg"></div>
+                            <div class="swiper-slide"><img class="img" src="../../assets/images/part3.svg"></div>
+                            <div class="swiper-slide"><img class="img" src="../../assets/images/part1.svg"></div>
+                            <div class="swiper-slide"><img class="img" src="../../assets/images/part2.svg"></div>
+                            <div class="swiper-slide"><img class="img" src="../../assets/images/part3.svg"></div>
+                            <div class="swiper-slide"><img class="img" src="../../assets/images/part2.svg"></div>
+                            <div class="swiper-slide"><img class="img" src="../../assets/images/part3.svg"></div>
+                            <div class="swiper-slide"><img class="img" src="../../assets/images/part1.svg"></div>
+                            <div class="swiper-slide"><img class="img" src="../../assets/images/part2.svg"></div>
+                            <div class="swiper-slide"><img class="img" src="../../assets/images/part1.svg"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>    
+    
+    
+    <!-- footer -->
+    <footer class="pt-1">
+        <div class="footer-home footer-content">
+            <div class="container-fluid ">
+                <ul class="footer-list">
+                    <li class="nav-item">
+                        <a href="home.html" class="nav-link d-flex gap-3 align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M9.02 2.84016L3.63 7.04016C2.73 7.74016 2 9.23016 2 10.3602V17.7702C2 20.0902 3.89 21.9902 6.21 21.9902H17.79C20.11 21.9902 22 20.0902 22 17.7802V10.5002C22 9.29016 21.19 7.74016 20.2 7.05016L14.02 2.72016C12.62 1.74016 10.37 1.79016 9.02 2.84016Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 17.9902V14.9902" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="d-block">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link d-flex gap-3 align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                <path d="M11.4999 2.44982C12.1999 1.85982 13.3299 1.85982 14.0099 2.44982L15.5899 3.79982C15.8899 4.04982 16.4599 4.25982 16.8599 4.25982H18.5599C19.6199 4.25982 20.4899 5.12982 20.4899 6.18982V7.88982C20.4899 8.28982 20.6999 8.84982 20.9499 9.14982L22.2999 10.7298C22.8899 11.4298 22.8899 12.5598 22.2999 13.2398L20.9499 14.8198C20.6999 15.1198 20.4899 15.6798 20.4899 16.0798V17.7798C20.4899 18.8398 19.6199 19.7098 18.5599 19.7098H16.8599C16.4599 19.7098 15.8999 19.9198 15.5999 20.1698L14.0199 21.5198C13.3199 22.1098 12.1899 22.1098 11.5099 21.5198L9.92988 20.1698C9.62988 19.9198 9.05988 19.7098 8.66988 19.7098H6.91988C5.85988 19.7098 4.98988 18.8398 4.98988 17.7798V16.0698C4.98988 15.6798 4.78988 15.1098 4.53988 14.8198L3.18988 13.2298C2.60988 12.5398 2.60988 11.4198 3.18988 10.7298L4.53988 9.13982C4.78988 8.83982 4.98988 8.27982 4.98988 7.88982V6.19982C4.98988 5.13982 5.85988 4.26982 6.91988 4.26982H8.64988C9.04988 4.26982 9.60988 4.05982 9.90988 3.80982L11.4999 2.44982Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12.75 8.12988V12.9599" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12.7446 16H12.7536" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="d-block">About us</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link d-flex gap-3 align-items-center active">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M3.17017 7.43994L12.0002 12.5499L20.7701 7.46991" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12.0002 21.61V12.54" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21.6101 12.83V9.17C21.6101 7.79 20.6201 6.11002 19.4101 5.44002L14.0701 2.48C12.9301 1.84 11.0701 1.84 9.93011 2.48L4.59012 5.44002C3.38012 6.11002 2.39014 7.79 2.39014 9.17V14.83C2.39014 16.21 3.38012 17.89 4.59012 18.56L9.93011 21.52C10.5001 21.84 11.2501 22 12.0001 22C12.7501 22 13.5001 21.84 14.0701 21.52" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M19.2 21.4C20.9673 21.4 22.4 19.9673 22.4 18.2C22.4 16.4327 20.9673 15 19.2 15C17.4327 15 16 16.4327 16 18.2C16 19.9673 17.4327 21.4 19.2 21.4Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M23 22L22 21" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="d-block">Products</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link d-flex gap-3 align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                <path d="M12.5 15C14.1569 15 15.5 13.6569 15.5 12C15.5 10.3431 14.1569 9 12.5 9C10.8431 9 9.5 10.3431 9.5 12C9.5 13.6569 10.8431 15 12.5 15Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2.5 12.8799V11.1199C2.5 10.0799 3.35 9.21994 4.4 9.21994C6.21 9.21994 6.95 7.93994 6.04 6.36994C5.52 5.46994 5.83 4.29994 6.74 3.77994L8.47 2.78994C9.26 2.31994 10.28 2.59994 10.75 3.38994L10.86 3.57994C11.76 5.14994 13.24 5.14994 14.15 3.57994L14.26 3.38994C14.73 2.59994 15.75 2.31994 16.54 2.78994L18.27 3.77994C19.18 4.29994 19.49 5.46994 18.97 6.36994C18.06 7.93994 18.8 9.21994 20.61 9.21994C21.65 9.21994 22.51 10.0699 22.51 11.1199V12.8799C22.51 13.9199 21.66 14.7799 20.61 14.7799C18.8 14.7799 18.06 16.0599 18.97 17.6299C19.49 18.5399 19.18 19.6999 18.27 20.2199L16.54 21.2099C15.75 21.6799 14.73 21.3999 14.26 20.6099L14.15 20.4199C13.25 18.8499 11.77 18.8499 10.86 20.4199L10.75 20.6099C10.28 21.3999 9.26 21.6799 8.47 21.2099L6.74 20.2199C5.83 19.6999 5.52 18.5299 6.04 17.6299C6.95 16.0599 6.21 14.7799 4.4 14.7799C3.35 14.7799 2.5 13.9199 2.5 12.8799Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="d-block">Services</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link d-flex gap-3 align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M18.4701 16.83L18.8601 19.99C18.9601 20.82 18.0701 21.4 17.3601 20.97L13.1701 18.48C12.7101 18.48 12.2601 18.45 11.8201 18.39C12.5601 17.52 13.0001 16.42 13.0001 15.23C13.0001 12.39 10.5401 10.09 7.50009 10.09C6.34009 10.09 5.2701 10.42 4.3801 11C4.3501 10.75 4.34009 10.5 4.34009 10.24C4.34009 5.68999 8.29009 2 13.1701 2C18.0501 2 22.0001 5.68999 22.0001 10.24C22.0001 12.94 20.6101 15.33 18.4701 16.83Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13 15.2298C13 16.4198 12.56 17.5198 11.82 18.3898C10.83 19.5898 9.26 20.3598 7.5 20.3598L4.89 21.9098C4.45 22.1798 3.89 21.8098 3.95 21.2998L4.2 19.3298C2.86 18.3998 2 16.9098 2 15.2298C2 13.4698 2.94 11.9198 4.38 10.9998C5.27 10.4198 6.34 10.0898 7.5 10.0898C10.54 10.0898 13 12.3898 13 15.2298Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="d-block">Contact us</span>
+                        </a>
+                    </li>
+                </ul>
+           
+            </div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center flex-wrap copy-right footer-content">
+                    <p>Copyright © 2025 MAZAYA Software Company . All Rights Reserved. </p>
+                    <div class="d-flex gap-2 align-items-center">
+                        <a href="" class="secondary-color fw-500">
+                            Privacy Policy
+                        </a>
+                        <div class="divider"></div>
+                        <a href="" class="secondary-color fw-500">
+                            Cookies Policy.
+                        </a>
+                    </div>
+        </div>
+
+        <!-- Robot image -->
+        <img class="robot-img position-absolute" src="../../assets/images/robot.svg">
+    </footer>
+    <!-- end of footer -->
+    </div>
+  </body>
+
+   <!-- bootstrap js -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+   <!-- appear menu -->
+   <script>
+    document.querySelector('.menu-icon').addEventListener('click', () => {
+         document.querySelector('.navbar').classList.toggle('active');
+    });
+   </script>
+
+ <!-- Swiper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+ <!-- Initialize Swiper -->
+ <script>
+   var swiper = new Swiper(".partner_swipper", {
+     slidesPerView: 3,
+     grid: {
+       rows: 3,
+     },
+     spaceBetween: 1,
+     navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+     pagination: {
+       el: ".swiper-pagination",
+       clickable: true,
+     },
+   });
+ </script>
+</html>

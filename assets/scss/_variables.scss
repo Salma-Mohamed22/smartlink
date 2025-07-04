@@ -1,0 +1,48 @@
+// Define variables
+$colors: (
+  "primary": #E88B2A,
+  "secondary": #DF5832,
+  "gradient-primary": linear-gradient(90deg, #E88B2A 0.03%, #E26730 73.39%, #DF5832 100.28%),
+  "dark": #3B3B3B,
+);
+
+// custom colors
+$primary: #E88B2A;
+$primary-gradient: linear-gradient(90deg, #E88B2A 0.03%, #E26730 73.39%, #DF5832 100.28%);
+$secondary: #DF5832;
+$third: #E26730;
+$layout-gradient: rgba(29, 29, 29, 0.85);
+$text-color: #1B1D1E;
+$gray-color: #D9D9D9;
+$light-gray: #ededee58;
+$light-gradient-primary: linear-gradient(89deg, rgba(232, 140, 42, 0.459) 0.6%, rgba(226, 104, 48, 0.295) 37.72%, rgba(247, 236, 223, 0.568) 99.33%);
+$light-primary-color: rgba(232, 139, 42, 0.10);
+$breadcrumb-color: #8E8E8E;
+$black: #1B1D1E;
+$body-color: #F8F9FC;
+$light-secondary: #FCD0C3;
+$light-third: #FFE9D3;
+$border-radius: 12px;
+
+$font-sizes: (
+  "fs-14": 14px,
+  "fs-16": 16px,
+  "fs-18": 18px,
+  "fs-25": 25px,
+  "fs-38": 38px,
+  "fs-42": 42px,
+);
+
+$font-weights: (
+  "fw-300": 300,
+  "fw-400": 400,
+  "fw-500": 500,
+  "fw-700": 700,
+  "fw-900": 900
+);
+
+// re-used variables 
+$main_padding: clamp(50px, 8.5vw, 500px);
+$max-body-width: 4000px;
+$footer-height: 85px;
+$copyright-height: 54px;

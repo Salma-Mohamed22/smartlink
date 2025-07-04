@@ -1,0 +1,97 @@
+// Import Variables
+@use 'variables' as *;
+
+// mixin common padding
+@mixin apply-main-padding($top: 16px) {
+    padding-block: $top !important;
+}
+
+@mixin list_reset {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+@mixin background-image-cover($image-path) {
+  background: url(#{$image-path});
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@mixin abs-transform($top: null, $left: null, $bottom: null, $right: null, $transform: null) {
+  position: absolute;
+
+  @if $top != null {
+    top: $top;
+  }
+  @if $left != null {
+    left: $left;
+  }
+  @if $bottom != null {
+    bottom: $bottom;
+  }
+  @if $right != null {
+    right: $right;
+  }
+
+  @if $transform != null {
+    transform: $transform;
+  } 
+  @else if $top != null and $left != null {
+    transform: translate(-#{$left}, -#{$top});
+  } 
+  @else if $bottom != null and $left != null {
+    transform: translate(-#{$left}, #{$bottom});
+  } 
+  @else if $top != null and $right != null {
+    transform: translate(#{$right}, -#{$top});
+  } 
+  @else if $bottom != null and $right != null {
+    transform: translate(#{$right}, #{$bottom});
+  }
+}
+
+// mixin common styles for full coverage
+@mixin full-cover {
+  @include abs-transform(0, 0);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+// Mixin for flexbox layout
+@mixin flex($direction: row, $justify: center, $align: center, $wrap: wrap, $gap: 0) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+  gap: $gap;
+}
+
+// Mixin for grid layout
+@mixin grid($min: 250px, $gap: 16px) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($min, 1fr));
+  gap: $gap;
+}
+// Mixin for Button
+@mixin button-style($bg, $color: #fff, $border-color: $bg) {
+  background: $bg !important;
+  color: $color !important;
+  border: 1px solid $border-color !important;
+  transition: all 0.3s ease;
+
+  // تأثيرات hover و active
+  &:hover,
+  &:active {
+    opacity: 0.9;
+  }
+}
+%circle-shape {
+  position: absolute;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  height: auto;
+}

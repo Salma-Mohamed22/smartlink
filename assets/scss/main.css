@@ -595,7 +595,7 @@ main .title-main {
   transform: translate(-0%, -45%);
   z-index: 3;
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
 }
 main .main_video {
   position: absolute;
